@@ -36,7 +36,7 @@ do-install:
 
 post-install:
 	@${ECHO_MSG}    ""
-	@${ECHO_MSG}    "  You should run siegfried -update to update your local PRONOM database."
+	@${ECHO_MSG}    "  You should run 'siegfried -update' to update your local PRONOM database."
 	@${ECHO_MSG}    ""
 
 
