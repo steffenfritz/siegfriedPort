@@ -32,6 +32,6 @@ do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${PORTNAME}/cmd/sf; ${SETENV} GOPATH=${WRKSRC} go build -o ${WRKSRC}/${GH_ACCOUNT}/${PORTNAME}/bin/siegfried
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/${GH_ACCOUNT}/${PORTNAME}/bin/siegfried ${PREFIX}/bin/siegfried
+	${INSTALL_PROGRAM} ${WRKSRC}/${GH_ACCOUNT}/${PORTNAME}/bin/siegfried ${STAGEDIR}${PREFIX}/bin/siegfried
 
 .include <bsd.port.mk>
