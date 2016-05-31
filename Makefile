@@ -14,6 +14,8 @@ LICENSE=		APACHE20
 
 BUILD_DEPENDS=  	go:lang/go
 
+NEED_ROOT=		yes
+
 USE_GITHUB=		yes
 GH_ACCOUNT=		richardlehane
 
