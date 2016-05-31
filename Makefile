@@ -14,8 +14,6 @@ LICENSE=		APACHE20
 
 BUILD_DEPENDS=  	go:lang/go
 
-NEED_ROOT=		yes
-
 USE_GITHUB=		yes
 GH_ACCOUNT=		richardlehane
 
@@ -35,5 +33,11 @@ do-build:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${GH_ACCOUNT}/${PORTNAME}/bin/siegfried ${STAGEDIR}${PREFIX}/bin/siegfried
+
+post-install:
+	@${ECHO_MSG}    ""
+	@${ECHO_MSG}    "  You should run siegfried -update to update your local PRONOM database."
+	@${ECHO_MSG}    ""
+
 
 .include <bsd.port.mk>
