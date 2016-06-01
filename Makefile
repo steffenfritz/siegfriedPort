@@ -1,3 +1,4 @@
+# Created by: Steffen Fritz <steffen@fritz.wtf>
 # $FreeBSD$
 
 PORTNAME=		siegfried
@@ -6,13 +7,13 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=		sysutils
 
 MAINTAINER=		steffen@fritz.wtf
-COMMENT= 		a file identification tool
-
-PLIST_FILES=		bin/siegfried
+COMMENT= 		File identification tool
 
 LICENSE=		APACHE20
 
 BUILD_DEPENDS=  	go:lang/go
+
+PLIST_FILES=		bin/siegfried
 
 USE_GITHUB=		yes
 GH_ACCOUNT=		richardlehane
@@ -38,6 +39,5 @@ post-install:
 	@${ECHO_MSG}    ""
 	@${ECHO_MSG}    "  You should run 'siegfried -update' to update your local PRONOM database."
 	@${ECHO_MSG}    ""
-
 
 .include <bsd.port.mk>
