@@ -1,22 +1,23 @@
 # Created by: Steffen Fritz <steffen@fritz.wtf>
 # $FreeBSD$
 
-PORTNAME=		siegfried
-PORTVERSION=		1.5.0
+PORTNAME=			siegfried
+PORTVERSION=		1.6.7
 DISTVERSIONPREFIX=	v
-CATEGORIES=		sysutils
+CATEGORIES=			sysutils
 
-MAINTAINER=		steffen@fritz.wtf
-COMMENT= 		File identification tool
+MAINTAINER=			steffen@fritz.wtf
+COMMENT= 			File identification tool
 
-LICENSE=		APACHE20
+LICENSE=			APACHE20
 
 BUILD_DEPENDS=  	go:lang/go
 
 PLIST_FILES=		bin/siegfried
 
-USE_GITHUB=		yes
-GH_ACCOUNT=		richardlehane
+USE=				go
+USE_GITHUB=			yes
+GH_ACCOUNT=			richardlehane
 
 STRIP=
 
